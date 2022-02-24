@@ -182,3 +182,8 @@
   color: lightgray;
   text-decoration: none;
 }
+
+.icontext {
+  display: inline-block;
+  margin-right: 8px;
+}
