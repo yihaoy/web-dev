@@ -111,6 +111,10 @@ nav-item.override-bs{
   background-color: black;
   color: lightgray;
 }
+
+.mid-font.override-bs{
+  color:gray;
+}
 .list-group.override-bs{
   background-color: transparent;
   color:white;
