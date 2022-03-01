@@ -167,6 +167,7 @@ a:active {
 .wd-center-image-logo {
   border-radius: 10px;
   border: none;
+  overflow: hidden;
 }
 
 
