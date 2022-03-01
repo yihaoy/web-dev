@@ -31,8 +31,18 @@
 
 }
 
+.wd-img-avatar{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
 
 .bolded { font-weight: bold; }
+
+
 
 
 .wd-search-mid {
@@ -133,4 +143,46 @@ nav-item.override-bs{
   background-color: white;
   font-weight: bold;
   color: black;
+}
+
+a:hover,
+a:active {
+  color: rgb(29,161,242);
+}
+
+.time-color.override-bs{
+  font-weight: lighter;
+  color:grey;
+}
+
+.wd-text-bottom-left-hs {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  font-size: 40px;
+  font-weight: bolder;
+  color: dimgrey;
+}
+
+.wd-center-image-logo {
+  border-radius: 10px;
+  border: none;
+}
+
+
+.wd-post-img-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  }
+
+
+
+.wd-post-img{
+  width: 50%;
+  height: 50%;
+
+  border: none;
 }
