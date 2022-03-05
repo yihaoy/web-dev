@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
   return(`
         
-        <!-- search field -->
+        <!-- search bar -->
         <div class="row mb-1">
                  <div class="col-10 mt-1 wd-search-container ">
               <input class="col-12 wd-search-mid " type="search" placeholder="Search"/>
@@ -35,7 +35,7 @@ const ExploreComponent = () => {
             </ul>
         </div>
         
-        <!-- space'x starship image -->
+        <!-- spacex image -->
         <div class="row mt-2 wd-text-container">
             <img src="../images/spacex.jpg" alt="space x starship" class="m-0 p-0">
             <div class="wd-text-bottom-left-hs fg-color-darkgray">SpaceX's Starship</div>
