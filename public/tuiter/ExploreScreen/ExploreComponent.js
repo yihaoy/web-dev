@@ -12,7 +12,7 @@ const ExploreComponent = () => {
             <div class="col-1 d-lg-inline d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline d-xxl-inline">
             <a href="explore-settings.html"><i class="fa-solid fa-gear fa-2x bg-color-black fg-color-deepskyblue"></i></a>
             </div>
-        </div>
+        </div
         
         <!-- navigation tabs -->
         <div class="row mt-2">

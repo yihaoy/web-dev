@@ -8,7 +8,7 @@ const PostItem = (post) => {
                         </div>
                     
                       
-                        <div class="col-10">
+                        <div class="col-7">
                             <div>
                                 <p class="m-0 fs-6">${post.name} <i class="fa-solid fa-circle-check"></i> <span class="fg-color-darkgray">${post.handle} - ${post.time}</span></span></p>
                                 <p class="m-0 fs-6">${post.quote}</p>
@@ -18,10 +18,10 @@ const PostItem = (post) => {
       `<div class="row mt-2 m-0 p-0 "> 
                                     <img src=${post.image} class="wd-post-img m-0"> 
                                 </div>
-                                <div class="m-0 p-0 wd-PostItem-text">
-                                    <p class="ms-3 mt-0 mb-0 pt-2 fs-6">${post.title}</p>
-                                    <p class="ms-3 mt-0 mb-0 p-0 fs-6 fg-color-darkgray">${post.story}</p>
-                                    <p class="ms-3 mt-0 mb-2 p-0 fs-6 fg-color-darkgray"><i class="fa-solid fa-link"></i> ${post.website}</p>
+                                <div class="m-0 p-0">
+                                    <p class="ms-2 mt-0 mb-0 pt-2 fs-6">${post.title}</p>
+                                    <p class="ms-2 mt-0 mb-0 p-0 fs-6 fg-color-darkgray">${post.story}</p>
+                                    <p class="ms-2 mt-0 mb-2 p-0 fs-6 fg-color-darkgray"><i class="fa-solid fa-link"></i> ${post.website}</p>
                                 </div>`:
       `<div class="row mt-2 m-0 p-0">
                                     <img src=${post.image} class="wd-post-img m-0 p-0">
