@@ -4,7 +4,7 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
 
 
 (function ($) {
-  $('#HOME').append(`
+  $('#home').append(`
     <div class="container">
         <div class="row mt-2">
             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 mt-1">
