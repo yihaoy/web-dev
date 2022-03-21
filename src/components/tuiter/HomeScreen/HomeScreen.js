@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import PostList from "../PostList/PostList";
-import PostSummaryList from "../PostSummaryList";
+import WhoToFollowList from "../WhoToFollowList";
 
 const HomeScreen = () => {
   return(
@@ -14,7 +14,7 @@ const HomeScreen = () => {
           <PostList/>
         </div>
         <div className="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block mt-1">
-          <PostSummaryList/>
+          <WhoToFollowList/>
         </div>
       </div>
   );

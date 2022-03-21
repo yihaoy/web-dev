@@ -30,7 +30,7 @@ const NavigationSidebar = (active) => {
           </div>
 
         
-        <!-- Tweet button -->
+
         <div class="d-grid mt-2">
             <a href="index.html" class="btn btn-primary btn-block rounded-pill">Tweet</a>
         </div>

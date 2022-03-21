@@ -1,9 +1,9 @@
 import PostList from "../PostList/PostList.js";
 import NavigationSidebar from "../NavigationSidebar";
-import PostSummaryList from "../PostSummaryList";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 
 (function ($) {
-  $('#wd-home').append(`
+  $('#home').append(`
        
     <div class="container">
         <div class="row mt-2">
@@ -15,9 +15,10 @@ import PostSummaryList from "../PostSummaryList";
                 ${PostList()}
             </div>  
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                ${PostSummaryList()}
+                ${WhoToFollowList()}
             </div>
         </div>
     </div>
     `);
 })($);
+
