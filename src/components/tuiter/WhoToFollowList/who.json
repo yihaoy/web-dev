@@ -1,0 +1,8 @@
+[
+  {"avatarIcon": "../tuiter/images/Java.png", "userName": "Java", "handle": "@Java", "UID": "1"},
+  {"avatarIcon": "../tuiter/images/relativity-space.png", "userName": "Relativity Space", "handle": "@relativityspace", "UID": "2"},
+  {"avatarIcon": "../tuiter/images/virgin-logo.png", "userName": "Virgin Galactic", "handle": "@virgingalactic", "UID": "3"},
+  {"avatarIcon": "../tuiter/images/NASA.png", "userName": "NASA", "handle": "@NASA", "UID": "4"},
+  {"avatarIcon": "../tuiter/images/tesla.png", "userName": "Tesla", "handle": "@Tesla", "UID": "5"}
+
+]

@@ -1,0 +1,209 @@
+.wd-explore-page-background-color{
+  color: black;
+}
+
+
+
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+  color:darkgrey;
+  background-color: white;
+}
+
+.wd-padded-left {
+  padding-left: 12px;
+}
+
+
+.wd-img{
+  width:100px;
+  height: 100px;
+  padding-right: 16px;
+}
+
+.wd-bm-img-avatar {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.wd-img-avatar{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.bolded { font-weight: bold; }
+
+
+
+
+.wd-search-mid {
+  border-radius: 15px;
+  border-color: lightgray;
+  border-width: thin;
+  text-indent:30px;
+}
+
+.wd-search-container {
+  position: relative;
+}
+
+.wd-center-magnify-glass {
+  position: absolute;
+  top: 8px;
+  left:22px
+}
+
+.wd-text-bottom-left {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+
+.wd-text-container {
+  position: relative;
+  text-align: left;
+}
+
+.wd-explore-page-background-color.override-bs{
+  background-color: black;
+  color: white;
+}
+
+.list-group.override-bs{
+  background-color: black;
+  color: white;
+}
+
+.list-group-item-action.override-bs{
+  background-color: black;
+  color: white;
+}
+
+.list-group-item.override-bs{
+  background-color: black;
+  color: white;
+}
+
+.wd-search-mid.override-bs {
+  background-color: dimgray;
+  border-radius: 15px;
+  border-color: darkgrey;
+  border-width: thin;
+  text-indent:30px;
+}
+
+nav-item.override-bs{
+  background-color: black;
+  font-weight:lighter;
+  color: white;
+}
+
+
+.nav-item.active.override-bs{
+  font-weight: bolder;
+  background-color:black;
+  color: lightgray;
+}
+
+.nav-item.active.override-as{
+  font-weight: bolder;
+  background-color:dodgerblue;
+  color: lightgray;
+}
+
+.nav-item a:active{
+  color: white;
+  background-color: dodgerblue;
+}
+
+.nav-link.override-bs{
+  background-color: black;
+  color: lightgray;
+}
+
+
+.mid-font.override-bs{
+  color:gray;
+}
+.list-group.override-bs{
+  background-color: transparent;
+  color:white;
+}
+
+.list-group.item.override-bs{
+  background-color: transparent;
+  color:white;
+}
+
+.gear.override-bs{
+  color: lightgray;
+}
+
+.inner_button.override-bs{
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: rgb(29,161,242);
+}
+
+.time-color.override-bs{
+  font-weight: lighter;
+  color:grey;
+}
+
+.wd-text-bottom-left-hs {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  font-size: 40px;
+  font-weight: bolder;
+  color: dimgrey;
+}
+
+.wd-center-image-logo {
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+
+.wd-post-img-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  }
+
+
+
+.wd-post-img{
+  border-radius: 10px;
+  border: solid;
+  border-color: grey;
+  border-width: thin;
+  overflow: hidden;
+
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

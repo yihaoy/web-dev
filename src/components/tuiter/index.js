@@ -1,18 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import ExploreScreen from "./ExploreScreen/ExploreScreen";
 
-const Labs = () => {
+const Tuiter = () => {
   return(
       <>
-        <h1>Labs</h1>
-        <Link to="/hello">
-          Hello
-        </Link> |
-        <Link to="/tuiter">
-          Tuiter
-        </Link>
+        <ExploreScreen/>
       </>
   )
 };
+export default Tuiter;
 
-export default Labs;
