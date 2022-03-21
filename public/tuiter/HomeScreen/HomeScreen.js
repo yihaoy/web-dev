@@ -13,7 +13,8 @@ import PostSummaryList from "../PostSummaryList";
             
             <div class="col-10 col-md-10 col-lg-7 col-xl-6">
                 ${PostList()}
-            </div>  
+            </div>
+            
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 ${PostSummaryList()}
             </div>
