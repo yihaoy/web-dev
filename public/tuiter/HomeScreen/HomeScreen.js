@@ -3,7 +3,7 @@ import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList";
 
 (function ($) {
-  $('#wd-home').append(`
+  $('#home').append(`
        
     <div class="container">
         <div class="row mt-2">
