@@ -16,7 +16,7 @@ const PostItem = (post) => {
                             
                             ${!post.skip ?
       `<div class="row mt-2 m-0 p-0 "> 
-                                    <img src=${post.image} class="wd-post-img m-0"> 
+                                    <img src=${post.image} class="m-0"> 
                                 </div>
                                 <div class="m-0 p-0">
                                     <p class="ms-2 mt-0 mb-0 pt-2 fs-6">${post.title}</p>
