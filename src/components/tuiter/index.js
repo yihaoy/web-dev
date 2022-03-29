@@ -10,11 +10,13 @@ import profileReducer from "./reducers/profile-reducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
-//
-const reducers = combineReducers({who:whoReducer, tuits:tuitsReducer, profile:profileReducer})
-const store = createStore(whoReducer);
+
+const reducer = combineReducers({who:whoReducer, tuits:tuitsReducer, profile:profileReducer})
+const store = createStore(reducer);
 
 const Tuiter = () => {
+
+
   return(
       <Provider store={store}>
       <div className="row mt-2">
@@ -29,7 +31,7 @@ const Tuiter = () => {
         </div>
       </div>
       </Provider>
-  )
+  );
 };
 export default Tuiter;
 

@@ -9,7 +9,7 @@ const ProfileScreen = ({profile}) => {
             <div className="col-2 wd-arrow-back mt-3"><i className="fa-solid fa-arrow-left fa-xl"></i></div>
             <div className="col-10 ps-0">
               <h5 className="mb-0 fw-bold">{profile.firstName}</h5>
-              <p className="mb-0 fg-color-726D6D wd-font-size-15px">{profile.tweets.toLocaleString()} Tweets</p>
+              <p className="mb-0 fg-color-726D6D wd-font-size-15px">{profile.tweets.toLocaleString()} Tuit</p>
             </div>
           </div>
 
@@ -22,9 +22,10 @@ const ProfileScreen = ({profile}) => {
                 <img className="wd-tweet-profile-position wd-tweet-profile-responsive d-none d-sm-none d-md-inline d-lg-inline-inline d-xl-inline-flex d-xl-inline d-xxl-inline" src={profile.profilePicture} alt="profile"/>
               </div>
 
+
               <div className="col-12">
                 <button className="btn btn-primary float-right wd-right-button-editprofile">
-                  <Link to="/tuiter/profile/editprofile" className="wd-text-decor-none">
+                  <Link to="/tuiter/profile/EditProfile" className="wd-text-decor-none">
                     <span className="wd-small-white-fontsize fw-bold">Edit profile</span>
                   </Link>
                 </button>

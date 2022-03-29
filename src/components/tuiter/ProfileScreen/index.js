@@ -3,12 +3,18 @@ import ProfileScreen from "./ProfileScreen";
 import {useSelector} from "react-redux";
 
 const ProfileList = () => {
-  const profiles = useSelector((state) => state.profiles);
+  const profile = useSelector((state) => state.profile);
 
 
   return(
       <>
-        {JSON.stringify(profiles)}
+        {
+          profile.map(profile => {
+            return(
+                <ProfileScreen profile={profile} key={profile._id}/>
+            )
+          })
+        }
       </>
   )
 }

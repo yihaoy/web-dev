@@ -40,9 +40,9 @@ function App() {
           </Routes>
 
         </div>
-        <Link to="/tuiter">A6 Tuiter home | </Link>
-        <Link to="/hello">A6 Hello | </Link>
-        <Link to="/labs">A6 Lab</Link>
+        <Link to="/tuiter">A7 Tuiter home | </Link>
+        <Link to="/hello">A7 Hello | </Link>
+        <Link to="/labs">A7 Lab</Link>
       </BrowserRouter>
   );
 }

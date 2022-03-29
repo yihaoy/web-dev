@@ -1,19 +1,22 @@
 import React from "react";
-// import tuits from "../data/tuits.json";
-import {useSelector} from "react-redux";
+/*import tuits from "../data/tuits.json";*/
 import TuitListItem from "./TuitListItem";
-import './tuit.css';
+import {useSelector} from "react-redux";
 
 const TuitList = () => {
-  const tuits = useSelector(state => state.tuits);
-  return (
-      <ul className="list-group">
+  const tuits = useSelector((state) => state.tuits);
+
+  return(
+      <>
         {
-          tuits?.map((tuit) =>
-              <TuitListItem key={tuit._id} tuit={tuit}/>)
+          tuits.map(tuit => {
+            return(
+                <TuitListItem tuits={tuit} key={tuit._id}/>
+            );
+          })
         }
-      </ul>
-  );
+      </>
+  )
 }
 
 export default TuitList;
