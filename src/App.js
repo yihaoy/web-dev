@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import './vendors/bootstrap/css/bootstrap.min.css';
@@ -14,7 +13,8 @@ import {BrowserRouter, Route, Routes,Link}
   from "react-router-dom";
 import Labs from "./components/labs/index";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen"
-import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen"
+import ProfileScreen from "./components/tuiter/ProfileScreen";
+import HomeScreenTuit from "./components/tuiter/HomeScreen/index";
 
 function App() {
   return (
@@ -27,11 +27,15 @@ function App() {
             <Route path="/labs"
                    exact={true}
                    element={<Labs/>}/>
-            <Route path="/tuiter"
-                   exact={true}
-                   element={<Tuiter/>}/>
-            <Route path="/tuiter/home" element={<HomeScreen/>}/>
-            <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
+
+            <Route path="tuiter"
+                   element={<Tuiter/>}>
+                   <Route index element={<HomeScreenTuit/>}/>
+                   <Route path="explore" element={<ExploreScreen/>}/>
+                   <Route path="profile" element={<ProfileScreen/>}/>
+                    {/* <Route path="notifications"
+                                          element={<NotificationScreen/>}/> */}
+            </Route>
 
           </Routes>
 

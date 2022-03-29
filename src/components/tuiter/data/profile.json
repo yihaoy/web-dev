@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "1234",
+    "firstName": "Pikachu",
+    "lastName": "Pokemon",
+    "handle": "pikap",
+    "profilePicture": "../tuiter/images/pikachu.jpeg",
+    "bannerPicture": "../tuiter/images/pokemon.png",
+    "bio": "A mysterious yellow creature from",
+    "location": "Somewhere everywhere",
+    "dataOfBirth": "02/30/1997",
+    "website": "pokemon.com",
+    "dateJoined": "06/2020",
+    "followingCount": 213,
+    "followersCount": 1230,
+    "tweets": 323
+  }
+]

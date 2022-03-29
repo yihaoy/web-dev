@@ -10,12 +10,12 @@ const NavigationSidebar = (
           <Link to="/"
             className="list-group-item list-group-item-action disabled"><i className="fa-brands fg-color-white fa-twitter"/>
         </Link>
-          <Link to="/tuiter/home"
+          <Link to="/tuiter"
             className="list-group-item list-group-item-action">
               <i className="fa-solid fa-house-chimney fg-color-lightgrey"/> Home
           </Link>
           <Link to="/tuiter/explore"
-             className="list-group-item list-group-item-action active">
+             className="list-group-item list-group-item-action">
               <i className="fa-solid fa-hashtag fg-color-lightgrey"/> Explore
           </Link>
           <Link to="/"
@@ -34,7 +34,7 @@ const NavigationSidebar = (
             className="list-group-item list-group-item-action">
               <i className="fa-solid fa-list fg-color-lightgrey"/> Lists
           </Link>
-          <Link to="/"
+          <Link to="/tuiter/profile"
             className="list-group-item list-group-item-action">
               <i className="fa-solid fa-user fg-color-lightgrey"/> Profile
           </Link>
@@ -47,7 +47,7 @@ const NavigationSidebar = (
 
         <div className="d-grid mt-2">
           <Link to="/"
-              className="btn btn-primary btn-block rounded-pill">Tweet
+              className="btn btn-primary btn-block rounded-pill">Tuit
           </Link>
         </div>
       </>
