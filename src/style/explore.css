@@ -413,10 +413,9 @@ ul.no-bullets {
   text-justify: inter-word;
 }
 
-.wd-right-button-saveprofile { /* Edit profile  ProfileScreen */
+.wd-button-saveprofile {
   width: 100%;
   border-radius: 20px;
-  /*margin-top: 15px;*/
   padding-left: 0;
   padding-right: 0;
   height: 30px;
@@ -428,11 +427,11 @@ ul.no-bullets {
   border: thin solid #2d2d2d;
 }
 
-#blackplaceholder::placeholder{ /* placeholder color for explorer screen */
+#blackplaceholder::placeholder{
   color: black;
 }
 
-#whiteplaceholder::placeholder{ /* placeholder color for editprofile screen */
+#whiteplaceholder::placeholder{
   color: white;
 }
 

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {useNavigate } from "react-router-dom";                        // useNavigate: use to go back previous route
+import {useNavigate } from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 const EditProfile = () => {
@@ -12,6 +12,7 @@ const EditProfile = () => {
   const dispatch = useDispatch();
   const goBack = useNavigate();
 
+
   const saveProfile = () => {
     dispatch({type: 'save-profile',
       profile: profile
@@ -22,21 +23,20 @@ const EditProfile = () => {
       <>
         <div className="row">
           <div className="row col-12 mb-1">
-            {/* go 1-page back */}
             <div className="col-2 wd-arrow-back mt-2"><i onClick={() => goBack(-1)} className="fa-solid fa-xmark fa-xl"></i></div>
             <div className="col-8 ps-0">
               <h5 className="mt-1 fw-bold">Edit Profile</h5>
             </div>
             <div className="col-2 ps-0 pe-0">
-              <button className="btn btn-primary wd-right-button-saveprofile pt-1 pb-4" onClick={saveProfile}>
+              <button className="btn btn-primary wd-button-saveprofile pt-1 pb-4" onClick={saveProfile}>
                 <p className="fg-color-black fw-bold">Save</p>
               </button>
             </div>
           </div>
 
-          <div className="row pe-0 col-12 pb-5 pt-2">
+          <div className="row pe-0 col-12 pt-2">
 
-            <img className="pe-0 wd-tweet-banner-position" src={profile.bannerPicture} alt="banner"/>
+            <img className="pe-0 wd-tweet-banner-position" src={profile.bannerPicture} alt={"banner"}/>
 
             <div className="row col-12">
               <div className="col-6">
@@ -70,7 +70,6 @@ const EditProfile = () => {
 
           <div className="row ms-4 pe-0 mt-4 mb-4 col-11 wd-border-gray">
             <p className="ps-0 mb-0 pt-0 fg-color-726D6D wd-font-size-15px">Birth date <span className="fg-color-deepskyblue"> Edit</span></p>
-            {/*<input placeholder={profile.dataOfBirth} className="bg-black ps-0 pb-0 mb-1 fg-color-white wd-noborder" type="text" onFocus="(this.type='date')" onBlur="(this.type='text')" id="whiteplaceholder" onChange={(event) => setProfile({...profile, dataOfBirth: event.target.value})}/> */ }
             <input placeholder={profile.dataOfBirth} className="bg-black ps-0 pb-0 mb-1 fg-color-white wd-noborder" type="text" id="whiteplaceholder" onChange={(event) => setProfile({...profile, dataOfBirth: event.target.value})}/>
           </div>
 

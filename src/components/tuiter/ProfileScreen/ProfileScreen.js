@@ -25,7 +25,7 @@ const ProfileScreen = ({profile}) => {
 
               <div className="col-12">
                 <button className="btn btn-primary float-right wd-right-button-editprofile">
-                  <Link to="/tuiter/profile/EditProfile" className="wd-text-decor-none">
+                  <Link to="/tuiter/profile/editprofile" className="wd-text-decor-none">
                     <span className="wd-small-white-fontsize fw-bold">Edit profile</span>
                   </Link>
                 </button>

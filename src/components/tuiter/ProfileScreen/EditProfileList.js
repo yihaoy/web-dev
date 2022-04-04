@@ -1,15 +1,18 @@
 import React from "react";
 import EditProfile from "./EditProfile";
 import profile from "../data/profile.json"
+import {useSelector} from "react-redux";
 
 const EditProfileList = () => {
+  const editprofile = useSelector((state) => state.profile);
+
   return(
       <>
         {
-          profile.map(profile => {
+          editprofile.map(profile => {
             return(
-                <EditProfile profile={profile} key={profile._id}/>
-            )
+                <EditProfile editprofile={profile} key={profile._id}/>
+            );
           })
         }
       </>
