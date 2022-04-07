@@ -1,56 +1,54 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import TuitStat from "./TuitStat"
-import {deleteTuit} from "../../../actions/tuits-actions";
+import {updateTuit} from "../../../actions/tuits-actions";
 
-const TuitListItem = ({tuits}) => {
+const TuitStat = ({tuits}) => {
   const dispatch = useDispatch();
 
-  /*const deleteTuit = (tuits) => {
-    dispatch({type: 'delete-tuit', tuits})
-  }
+  /*const likeTuit = () => {
+    dispatch({type: 'like-tuit', tuits});
+  }; */
 
-   */
+
   return(
       <>
-        <li className="list-group-item">
-          <div className="row">
-
-            <div className="col-2">
-              <img className={"img-fluid wd-avatar-tuit "} src={tuits['avatar-image']}  />
-            </div>
-
-            <div className="col-10">
-              <div>
-                <p className="m-0 fs-6">{tuits.postedBy && tuits.postedBy.username} <i className="fa-solid fa-circle-check"></i> <span className="fg-color-darkgray">{tuits.handle}<i onClick={() => deleteTuit(dispatch,tuits)} className="fa-solid fa-xmark wd-ellipsis-right ms-6"></i></span></p>
-                <p className="m-0 fs-6">{tuits.tuit}</p>
-              </div>
-
-              <div className="row mt-2 m-0 wd-post-img">
-                {
-                  tuits.attachments && tuits.attachments.video &&
-                  <iframe width="100%" height="350px"
-                          className="mt-2 wd-border-radius-20px"
-                          style={{width: "100%"}}
-                          src={`https://www.youtube.com/embed/${tuits.attachments.video}`}
-                          title="YouTube video player" frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen></iframe>
-                }
-                {
-                  tuits.attachments && tuits.attachments.image &&
-                  <img src={tuits.attachments.image} alt="attachment" className="wd-post-img m-0 p-0"/>
-                }
-              </div>
-
-              <TuitStat tuits={tuits}/>
-
-            </div>
+        <div className="row mt-3">
+          <div className="row col-3">
+            <p className="col-1 fg-color-white"><a href="\"><i className="fa-regular fa-comment fg-color-white"/></a></p>
+            <p className="col-1 ms-0 fg-color-white">{tuits.comments}</p>
           </div>
-        </li>
+          <div className="row col-3 ms-2">
+            <p className="col-1 fg-color-white"><a href="\"><i className="fa-solid fa-retweet fg-color-white"/></a></p>
+            <p className="col-1 ms-0 fg-color-white">{tuits.retuits}</p>
+          </div>
 
+
+          {/*<div className="row col-3 ms-3" onClick={likeTuit}>
+            {
+              tuits.liked &&
+              <p className="col-1 fg-color-white"><i className="fa-solid fa-heart" style={{color:tuits.liked ? 'red' : 'white'}}></i></p>
+            }
+            {
+              !tuits.liked &&
+              <p className="col-1 fg-color-white"><i className="fa-solid fa-heart"></i></p>
+            }
+            {
+              <p className="col-1 ms-0 fg-color-white">{tuits.likes}</p>
+            }
+          </div>*/}
+          <div className="row col-3 ms-3">
+            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, likes: tuits.likes + 1})} className="fa-solid fa-thumbs-up"></i></p>
+            <p className="col-1 ms-0 fg-color-white">{tuits.likes.toLocaleString()}</p>
+          </div>
+
+          <div className="row col-3 ms-4">
+            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, dislikes: tuits.dislikes + 1})} className="fa-solid fa-thumbs-down"></i></p>
+            <p className="col-1 ms-0 fg-color-white">{tuits.dislikes.toLocaleString()}</p>
+          </div>
+        </div>
       </>
+
   )
 }
 
-export default TuitListItem;
+export default TuitStat;

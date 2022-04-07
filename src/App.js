@@ -42,11 +42,15 @@ function App() {
           </Routes>
 
         </div>
-        <Link to="/tuiter">A7 Tuiter home | </Link>
-        <Link to="/hello">A7 Hello | </Link>
-        <Link to="/labs">A7 Lab</Link>
+
+        <Link to="/tuiter">A8 Tuiter home </Link>
       </BrowserRouter>
   );
 }
+
+
+
+//<Link to="/hello">A7 Hello | </Link>
+//<Link to="/labs">A7 Lab</Link>
 
 export default App;
