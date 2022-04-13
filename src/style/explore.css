@@ -397,8 +397,7 @@ ul.no-bullets {
   }
 }
 
-.wd-right-button-editprofile { /* Edit profile  ProfileScreen */
-  width: 22%;
+.wd-right-button-editprofile {
   border-radius: 20px;
   margin-top: 15px;
   padding-left: 0;
@@ -450,4 +449,3 @@ ul.no-bullets {
   transition: 250ms width ease, 250ms border-color ease;
 }
 
-/* end TuitItem */

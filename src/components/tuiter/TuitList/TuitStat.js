@@ -15,11 +15,11 @@ const TuitStat = ({tuits}) => {
         <div className="row mt-3">
           <div className="row col-3">
             <p className="col-1 fg-color-white"><a href="\"><i className="fa-regular fa-comment fg-color-white"/></a></p>
-            <p className="col-1 ms-0 fg-color-white">{tuits.comments}</p>
+            <p className="col-1 fg-color-white">{tuits.comments}</p>
           </div>
           <div className="row col-3 ms-2">
             <p className="col-1 fg-color-white"><a href="\"><i className="fa-solid fa-retweet fg-color-white"/></a></p>
-            <p className="col-1 ms-0 fg-color-white">{tuits.retuits}</p>
+            <p className="col-1 fg-color-white">{tuits.retuits}</p>
           </div>
 
 
