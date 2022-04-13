@@ -38,13 +38,17 @@ const TuitStat = ({tuits}) => {
             }
           </div>*/}
           <div className="row col-3 ms-3">
-            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, likes: tuits.likes + 1})} className="fa-solid fa-thumbs-up"></i></p>
-            <p className="col-1 ms-0 fg-color-white">{tuits.likes.toLocaleString()}</p>
+            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch,
+    {...tuits, likes: tuits.likes + 1})} className="fa-solid fa-thumbs-up"/></p>
+            <p className="col-1 fg-color-white">{tuits.likes.toLocaleString()}</p>
           </div>
 
           <div className="row col-3 ms-4">
-            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {...tuits, dislikes: tuits.dislikes + 1})} className="fa-solid fa-thumbs-down"></i></p>
-            <p className="col-1 ms-0 fg-color-white">{tuits.dislikes.toLocaleString()}</p>
+            <p className="col-1 fg-color-white"><i onClick={() => updateTuit(dispatch, {
+  ...tuits,
+  dislikes: tuits.dislikes + 1
+})} className="fa-solid fa-thumbs-down"/></p>
+            <p className="col-1 fg-color-white">{tuits.dislikes.toLocaleString()}</p>
           </div>
         </div>
       </>

@@ -3,25 +3,24 @@ import {FIND_ALL_TUITS, DELETE_TUIT, CREATE_TUIT, UPDATE_TUIT} from "../../../ac
 
 
 const tuitsReducer = (state = [], action) => {
-  switch (action.type) {
+  switch (action.type) {                                  // add a switch to handler different events
     case FIND_ALL_TUITS:
-      return action.tuits;
+      return action.tuits
     case DELETE_TUIT:
       return state.filter(
-          tuit => tuit._id !== action.tuit._id);
+          tuit => tuit._id !== action.tuits._id);
     case CREATE_TUIT:
       return [
-        ...state,
-        action.newTuit
-      ];
+        action.newTuit, ...state];
     case UPDATE_TUIT:
       return state.map(
-          tuit => tuit._id === action.tuit._id ?
-              action.tuit : tuit);
+          tuit => tuit._id === action.tuit._id ? action.tuit : tuit
+      );
     default:
       return state;
   }
-}
+};
+
 
 /*const tuitsReducer = (state = tuits, action) => {
   switch (action.type) {
