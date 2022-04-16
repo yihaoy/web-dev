@@ -5,7 +5,14 @@ import {createTuit} from "../../../actions/tuits-actions";
 const WhatsHappening = () => {
   //let [whatsHappening, setWhatsHappening] = useState('');
 
-  const [newTuit, setNewTuit] = useState({tuit: 'New tuit'})
+  const [newTuit, setNewTuit] = useState({
+    tuit: 'New tuit',
+    postedBy: {username: "Pikachuuu"},
+    handle:"pik",
+    likes:0,
+    dislikes:0,
+    avatarIcon: "../tuiter/images/pikachu.jpg"
+  })
   const dispatch = useDispatch();
 /*
   const tuitClickHandler = () => {
